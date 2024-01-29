@@ -1,3 +1,7 @@
+<script>
+    import Link from "$lib/components/link.svelte";
+
+</script>
 <section class="mb-10">
 	<form action="https://duckduckgo.com/" method="get">
 		<div class="grid grid-cols-5 gap-3">
@@ -15,25 +19,25 @@
 
 	<div class="grid grid-cols-3">
 		<ul>
-			<li><a href="https://www.youtube.com/" class="hover:text-white">YouTube</a></li>
-			<li><a href="https://twitter.com/" class="hover:text-white">Twitter</a></li>
-			<li><a href="https://www.instagram.com/" class="hover:text-white">Instagram</a></li>
-			<li><a href="https://www.reddit.com/" class="hover:text-white">Reddit</a></li>
-			<li><a href="https://news.ycombinator.com/" class="hover:text-white">Hacker News</a></li>
+			<li><Link url="https://www.youtube.com/" name="YouTube" /></li>
+			<li><Link url="https://twitter.com/" name="Twitter" /></li>
+			<li><Link url="https://www.instagram.com/" name="Instagram" /></li>
+			<li><Link url="https://www.reddit.com/" name="Reddit" /></li>
+			<li><Link url="https://news.ycombinator.com/" name="Hacker News" /></li>
 		</ul>
 		<ul>
-			<li><a href="https://www.vidio.com/" class="hover:text-white">Vidio</a></li>
-			<li><a href="https://www.twitch.tv/" class="hover:text-white">Twitch</a></li>
-			<li><a href="https://www.tiktok.com/" class="hover:text-white">TikTok</a></li>
-			<li><a href="https://kick.com/" class="hover:text-white">Kick</a></li>
-			<li><a href="https://www.viddsee.com/" class="hover:text-white">Viddsee</a></li>
+			<li><Link url="https://www.vidio.com/" name="Vidio" /></li>
+			<li><Link url="https://www.twitch.tv/" name="Twitch" /></li>
+			<li><Link url="https://www.tiktok.com/" name="TikTok" /></li>
+			<li><Link url="https://kick.com/" name="Kick" /></li>
+			<li><Link url="https://www.viddsee.com/" name="Viddsee" /></li>
 		</ul>
 		<ul>
-			<li><a href="https://github.com/" class="hover:text-white">Github</a></li>
-			<li><a href="https://www.inoreader.com/" class="hover:text-white">Inoreader</a></li>
-			<li><a href="https://feedly.com/" class="hover:text-white">Feedly</a></li>
-			<li><a href="https://translate.google.com/" class="hover:text-white">Google Translate</a></li>
-			<li><a href="https://chat.openai.com/" class="hover:text-white">ChatGPT</a></li>
+			<li><Link url="https://github.com/" name="Github" /></li>
+			<li><Link url="https://www.inoreader.com/" name="Inoreader" /></li>
+			<li><Link url="https://feedly.com/" name="Feedly" /></li>
+			<li><Link url="https://translate.google.com/" name="Google Translate" /></li>
+			<li><Link url="https://chat.openai.com/" name="ChatGPT" /></li>
 		</ul>
 	</div>
 </section>
@@ -42,11 +46,11 @@
 	<h4 class="uppercase text-xs font-bold mb-3">Other Links:</h4>
 
 	<ul>
-		<li><a href="https://aniwave.to/trending" class="hover:text-white">Aniwave</a></li>
-		<li><a href="https://open.spotify.com/" class="hover:text-white">Spotify</a></li>
-		<li><a href="https://music.youtube.com/" class="hover:text-white">YouTube Music</a></li>
-		<li><a href="https://psarips.com/" class="hover:text-white">PSArips</a></li>
-		<li><a href="https://pahe.me/" class="hover:text-white">Pahe Movies</a></li>
-		<li><a href="https://www.google.com/" class="hover:text-white">Google</a></li>
+		<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
+		<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
+		<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
+		<li><Link url="https://psarips.com/" name="PSArips" /></li>
+		<li><Link url="https://pahe.me/" name="Pahe Movies" /></li>
+		<li><Link url="https://www.google.com/" name="Google" /></li>
 	</ul>
 </section>
