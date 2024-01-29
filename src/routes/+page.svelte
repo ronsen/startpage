@@ -43,7 +43,8 @@
 
 	<ul>
 		<li><a href="https://aniwave.to/trending" class="hover:text-white">Aniwave</a></li>
-		<li><a href="https://gitlab.com/" class="hover:text-white">Gitlab</a></li>
+		<li><a href="https://open.spotify.com/" class="hover:text-white">Spotify</a></li>
+		<li><a href="https://music.youtube.com/" class="hover:text-white">YouTube Music</a></li>
 		<li><a href="https://psarips.com/" class="hover:text-white">PSArips</a></li>
 		<li><a href="https://pahe.me/" class="hover:text-white">Pahe Movies</a></li>
 		<li><a href="https://www.google.com/" class="hover:text-white">Google</a></li>
