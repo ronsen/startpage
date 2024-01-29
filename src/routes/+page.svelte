@@ -43,6 +43,12 @@
 <section class="mb-10">
 	<h4 class="uppercase text-xs font-bold mb-3">Other Links:</h4>
 
+	<div class="grid grid-cols-3 gap-3 mb-3">
+		<Link url="https://guritan.vercel.app/" name="Guritan" />
+		<Link url="https://asikin.vercel.app/" name="Asikin" />
+		<Link url="https://ayatacak.vercel.app/" name="Ayat Acak Alkitab" />
+	</div>
+
 	<div class="grid grid-cols-3 gap-3">
 		<ul>
 			<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
@@ -59,11 +65,5 @@
 			<li><Link url="https://mail.hetanews.com/" name="Heta Mail" /></li>
 			<li><Link url="https://www.google.com/" name="Google" /></li>
 		</ul>
-	</div>
-
-	<div class="grid grid-cols-3 gap-3 mt-3">
-		<Link url="https://guritan.vercel.app/" name="Guritan" />
-		<Link url="https://asikin.vercel.app/" name="Asikin" />
-		<Link url="https://ayatacak.vercel.app/" name="Ayat Acak Alkitab" />
 	</div>
 </section>
