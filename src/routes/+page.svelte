@@ -60,4 +60,10 @@
 			<li><Link url="https://www.google.com/" name="Google" /></li>
 		</ul>
 	</div>
+
+	<div class="grid grid-cols-3 gap-3 mt-3">
+		<Link url="https://guritan.vercel.app/" name="Guritan" />
+		<Link url="https://asikin.vercel.app/" name="Guritan" />
+		<Link url="https://ayatacak.vercel.app/" name="Ayat Acak Alkitab" />
+	</div>
 </section>
