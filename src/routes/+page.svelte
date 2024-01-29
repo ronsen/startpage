@@ -62,7 +62,7 @@
 <section class="mb-10">
 	<h4 class="uppercase text-xs font-bold mb-3">Favorite Links:</h4>
 
-	<div class="grid grid-cols-3">
+	<div class="grid grid-cols-3 gap-3">
 		<ul>
 			<li><Link url="https://www.youtube.com/" name="YouTube" /></li>
 			<li><Link url="https://twitter.com/" name="Twitter" /></li>
@@ -90,7 +90,7 @@
 <section class="mb-10">
 	<h4 class="uppercase text-xs font-bold mb-3">Other Links:</h4>
 
-	<div class="grid grid-cols-3">
+	<div class="grid grid-cols-3 gap-3">
 		<ul>
 			<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
 			<li><Link url="https://psarips.com/" name="PSArips" /></li>
