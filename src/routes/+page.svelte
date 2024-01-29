@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
     import Link from "$lib/components/link.svelte";
-
 </script>
+
 <section class="mb-10">
 	<form action="https://duckduckgo.com/" method="get">
 		<div class="grid grid-cols-5 gap-3">
