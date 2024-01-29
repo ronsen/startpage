@@ -90,13 +90,21 @@
 <section class="mb-10">
 	<h4 class="uppercase text-xs font-bold mb-3">Other Links:</h4>
 
-	<ul>
-		<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
-		<li><Link url="https://www.threads.net/" name="Threads" /></li>
-		<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
-		<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
-		<li><Link url="https://psarips.com/" name="PSArips" /></li>
-		<li><Link url="https://pahe.me/" name="Pahe Movies" /></li>
-		<li><Link url="https://www.google.com/" name="Google" /></li>
-	</ul>
+	<div class="grid grid-cols-3">
+		<ul>
+			<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
+			<li><Link url="https://psarips.com/" name="PSArips" /></li>
+			<li><Link url="https://pahe.me/" name="Pahe Movies" /></li>
+		</ul>
+		<ul>
+			<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
+			<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
+			<li><Link url="https://www.dropbox.com/" name="Dropbox" /></li>
+		</ul>
+		<ul>
+			<li><Link url="https://www.threads.net/" name="Threads" /></li>
+			<li><Link url="https://mail.hetanews.com/" name="Heta Mail" /></li>
+			<li><Link url="https://www.google.com/" name="Google" /></li>
+		</ul>
+	</div>
 </section>
