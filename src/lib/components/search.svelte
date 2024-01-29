@@ -51,6 +51,6 @@
 				<option value="Yandex">Yandex</option>
 			</select>
 		</div>
-		<button type="submit" class="w-full p-2 bg-blue-500 rounded-md text-white font-bold outline-none">Search</button>
+		<button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none">Search</button>
 	</div>
 </form>
