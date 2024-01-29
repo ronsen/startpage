@@ -63,7 +63,7 @@
 
 	<div class="grid grid-cols-3 gap-3 mt-3">
 		<Link url="https://guritan.vercel.app/" name="Guritan" />
-		<Link url="https://asikin.vercel.app/" name="Guritan" />
+		<Link url="https://asikin.vercel.app/" name="Asikin" />
 		<Link url="https://ayatacak.vercel.app/" name="Ayat Acak Alkitab" />
 	</div>
 </section>
