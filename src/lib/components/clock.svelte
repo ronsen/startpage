@@ -48,7 +48,7 @@
 	});
 </script>
 
-<div class="flex justify-between gap-3 uppercase text-xs">
+<div class="flex justify-between gap-3 uppercase text-xs text-gray-100">
 	<div>{day}, {date} {month} {year}</div>
 	<div>{hours}:{minutes}:{seconds}</div>
 </div>
