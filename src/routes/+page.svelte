@@ -92,6 +92,7 @@
 
 	<ul>
 		<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
+		<li><Link url="https://www.threads.net/" name="Threads" /></li>
 		<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
 		<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
 		<li><Link url="https://psarips.com/" name="PSArips" /></li>
