@@ -46,5 +46,6 @@
 		<li><a href="https://gitlab.com/" class="hover:text-white">Gitlab</a></li>
 		<li><a href="https://psarips.com/" class="hover:text-white">PSArips</a></li>
 		<li><a href="https://pahe.me/" class="hover:text-white">Pahe Movies</a></li>
+		<li><a href="https://www.google.com/" class="hover:text-white">Google</a></li>
 	</ul>
 </section>
