@@ -60,7 +60,7 @@
 </section>
 
 <section class="mb-10">
-	<h4 class="uppercase text-xs font-bold mb-3">Favorites Links:</h4>
+	<h4 class="uppercase text-xs font-bold mb-3">Favorite Links:</h4>
 
 	<div class="grid grid-cols-3">
 		<ul>
