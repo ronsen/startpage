@@ -74,8 +74,8 @@
 			<li><Link url="https://www.vidio.com/" name="Vidio" /></li>
 			<li><Link url="https://www.twitch.tv/" name="Twitch" /></li>
 			<li><Link url="https://www.tiktok.com/" name="TikTok" /></li>
-			<li><Link url="https://kick.com/" name="Kick" /></li>
-			<li><Link url="https://www.viddsee.com/" name="Viddsee" /></li>
+			<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
+			<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
 		</ul>
 		<ul>
 			<li><Link url="https://github.com/" name="Github" /></li>
@@ -97,8 +97,8 @@
 			<li><Link url="https://pahe.me/" name="Pahe Movies" /></li>
 		</ul>
 		<ul>
-			<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
-			<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
+			<li><Link url="https://kick.com/" name="Kick" /></li>
+			<li><Link url="https://www.viddsee.com/" name="Viddsee" /></li>
 			<li><Link url="https://www.dropbox.com/" name="Dropbox" /></li>
 		</ul>
 		<ul>
