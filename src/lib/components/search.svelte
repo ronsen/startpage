@@ -5,26 +5,19 @@
 	function handleSubmit() {
 		const key: string  = q.value.replaceAll(' ', '+');
 		const engine: string = e.value;
+		
 		let url: string = '';
-
-		if (engine == 'DUCKDUCKGO') {
-			url = `https://duckduckgo.com/?q=${key}&ia=web`;
-		}
 
 		if (engine == 'GOOGLE') {
 			url = `https://www.google.com/search?q=${key}`;
-		}
-
-		if (engine == 'BING') {
+		} else if (engine == 'BING') {
 			url = `https://www.bing.com/search?q=${key}`;
-		}
-
-		if (engine == 'YAHOO') {
+		} else if (engine == 'YAHOO') {
 			url = `https://search.yahoo.com/search?p=${key}`;
-		}
-
-		if (engine == 'BRAVE') {
+		} else if (engine == 'BRAVE') {
 			url = `https://search.brave.com/search?q=${key}`;
+		} else {
+			url = `https://duckduckgo.com/?q=${key}&ia=web`;
 		}
 
 		window.location.href = url;
