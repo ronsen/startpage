@@ -8,7 +8,7 @@
 		let url: string = '';
 
 		if (engine == 'DUCKDUCKGO') {
-			url = `https://duckduckgo.com/?q=${key}`;
+			url = `https://duckduckgo.com/?q=${key}&ia=web`;
 		}
 
 		if (engine == 'GOOGLE') {
@@ -25,10 +25,6 @@
 
 		if (engine == 'BRAVE') {
 			url = `https://search.brave.com/search?q=${key}`;
-		}
-
-		if (engine == 'YANDEX') {
-			url = `https://yandex.com/search/?text=${key}`;
 		}
 
 		window.location.href = url;
@@ -48,9 +44,8 @@
 				<option value="BING">Bing</option>
 				<option value="YAHOO">Yahoo!</option>
 				<option value="BRAVE">Brave</option>
-				<option value="Yandex">Yandex</option>
 			</select>
 		</div>
-		<button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none">Search</button>
+		<button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none uppercase">Search</button>
 	</div>
 </form>
