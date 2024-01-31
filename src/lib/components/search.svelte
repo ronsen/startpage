@@ -16,6 +16,8 @@
 			url = `https://search.yahoo.com/search?p=${key}`;
 		} else if (engine == 'BRAVE') {
 			url = `https://search.brave.com/search?q=${key}`;
+		} else if (engine == 'YOUTUBE ') {
+			url = `https://www.youtube.com/results?search_query=${key}`;
 		} else {
 			url = `https://duckduckgo.com/?q=${key}&ia=web`;
 		}
@@ -37,6 +39,7 @@
 				<option value="BING">Bing</option>
 				<option value="YAHOO">Yahoo!</option>
 				<option value="BRAVE">Brave</option>
+				<option value="YOUTUBE">YouTube</option>
 			</select>
 		</div>
 		<button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none uppercase">Search</button>
