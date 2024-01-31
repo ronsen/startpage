@@ -16,7 +16,7 @@
 			url = `https://search.yahoo.com/search?p=${key}`;
 		} else if (engine == 'BRAVE') {
 			url = `https://search.brave.com/search?q=${key}`;
-		} else if (engine == 'YOUTUBE ') {
+		} else if (engine == 'YOUTUBE') {
 			url = `https://www.youtube.com/results?search_query=${key}`;
 		} else {
 			url = `https://duckduckgo.com/?q=${key}&ia=web`;
