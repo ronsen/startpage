@@ -30,7 +30,7 @@
 	<div class="grid grid-cols-7 gap-1">
 		<div class="col-span-4">
 			<!-- svelte-ignore a11y-autofocus -->
-			<input bind:this={q}  type="text" class="w-full p-2 bg-zinc-600 text-gray-100 rounded-md outline-none font-bold" required autofocus>
+			<input bind:this={q} type="text" class="w-full p-2 bg-zinc-600 text-gray-100 rounded-md outline-none font-bold" required autofocus>
 		</div>
 		<div class="col-span-2">
 			<select bind:this={e} class="w-full p-2.5 bg-zinc-700 text-white rounded-md outline-none font-bold">
