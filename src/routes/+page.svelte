@@ -58,7 +58,7 @@
 		<ul>
 			<li><Link url="https://kick.com/" name="Kick" /></li>
 			<li><Link url="https://www.viddsee.com/" name="Viddsee" /></li>
-			<li><Link url="https://movie-web.app/" name="movie-web" /></li>
+			<li><Link url="https://fmoviesz.to/home" name="FMoviesz" /></li>
 		</ul>
 		<ul>
 			<li><Link url="https://www.threads.net/" name="Threads" /></li>
