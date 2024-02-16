@@ -1,10 +1,10 @@
 <script lang="ts">
+	export let engine: string;
+
 	let q: HTMLInputElement;
-	let e: HTMLSelectElement;
 
 	function handleSubmit() {
 		const key: string  = q.value.replaceAll(' ', '+');
-		const engine: string = e.value;
 		
 		let url: string = '';
 
@@ -27,21 +27,17 @@
 </script>
 
 <form method="get" on:submit|preventDefault={handleSubmit}>
-	<div class="grid grid-cols-7 gap-1">
+	<div class="relative">
 		<div class="col-span-4">
 			<!-- svelte-ignore a11y-autofocus -->
-			<input bind:this={q} type="text" class="w-full p-2 bg-zinc-600 text-gray-100 rounded-md outline-none font-bold" required autofocus>
+			<input bind:this={q} type="text" class="w-full p-2 pr-20 bg-zinc-600 text-gray-100 rounded-md outline-none font-bold" required autofocus>
 		</div>
-		<div class="col-span-2">
-			<select bind:this={e} class="w-full p-2.5 bg-zinc-700 text-white rounded-md outline-none font-bold">
-				<option value="DUCKDUCKGO">DuckDuckGo</option>
-				<option value="GOOGLE">Google</option>
-				<option value="BING">Bing</option>
-				<option value="YAHOO">Yahoo!</option>
-				<option value="BRAVE">Brave</option>
-				<option value="YOUTUBE">YouTube</option>
-			</select>
+		<div class="absolute top-0 right-0">
+			<button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-r-md text-white font-bold outline-none uppercase">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+					<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+				</svg>
+			</button>
 		</div>
-		<button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none uppercase">Search</button>
 	</div>
 </form>
