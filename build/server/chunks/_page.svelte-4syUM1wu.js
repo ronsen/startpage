@@ -182,6 +182,30 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</li></ul></div></section> <section class="mb-10"><h4 class="uppercase text-xs font-bold mb-3" data-svelte-h="svelte-axlx55">Other Links:</h4> <div class="grid grid-cols-3 gap-3 mb-3">${validate_component(Link, "Link").$$render(
     $$result,
     {
+      url: "https://web.whatsapp.com/",
+      name: "WhatsApp"
+    },
+    {},
+    {}
+  )} ${validate_component(Link, "Link").$$render(
+    $$result,
+    {
+      url: "https://www.messenger.com/",
+      name: "Messenger"
+    },
+    {},
+    {}
+  )} ${validate_component(Link, "Link").$$render(
+    $$result,
+    {
+      url: "https://web.telegram.org/",
+      name: "Telegram"
+    },
+    {},
+    {}
+  )} ${validate_component(Link, "Link").$$render(
+    $$result,
+    {
       url: "https://guritan.vercel.app/",
       name: "Guritan"
     },
@@ -271,4 +295,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-d4K_-LUX.js.map
+//# sourceMappingURL=_page.svelte-4syUM1wu.js.map
