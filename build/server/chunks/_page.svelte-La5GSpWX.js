@@ -36,9 +36,10 @@ const Clock = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 const Search = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { engine } = $$props;
   let q;
+  let e;
   if ($$props.engine === void 0 && $$bindings.engine && engine !== void 0)
     $$bindings.engine(engine);
-  return `<form method="get"><div class="relative"><div class="col-span-4"> <input type="text" class="w-full p-2 pr-20 bg-zinc-600 text-gray-100 rounded-md outline-none font-bold" required autofocus${add_attribute("this", q, 0)}></div> <div class="absolute top-0 right-0" data-svelte-h="svelte-1h5bjrz"><button type="submit" class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-r-md text-white font-bold outline-none uppercase"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg></button></div></div></form>`;
+  return `<form method="get"><div class="w-full join"> <input type="text" class="w-full input input-bordered join-item" required autofocus${add_attribute("this", q, 0)}> <select class="select select-bordered join-item"${add_attribute("this", e, 0)}><option disabled selected${add_attribute("value", engine, 0)}>${escape(engine)}</option><option value="DUCKDUCKGO" data-svelte-h="svelte-2tadwq">DuckDuckGo</option><option value="BING" data-svelte-h="svelte-eznx9q">Bing</option><option value="BRAVE" data-svelte-h="svelte-29d6ye">Brave</option><option value="GOOGLE" data-svelte-h="svelte-jwkbey">Google</option><option value="YAHOO" data-svelte-h="svelte-1nymr4b">Yahoo!</option><option value="YOUTUBE" data-svelte-h="svelte-raqse8">YouTube</option></select> <button type="submit" class="btn btn-primary join-item" data-svelte-h="svelte-17xspnq"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path></svg></button></div></form>`;
 });
 function extractDomain(link) {
   const url = new URL(link);
@@ -295,4 +296,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-4syUM1wu.js.map
+//# sourceMappingURL=_page.svelte-La5GSpWX.js.map

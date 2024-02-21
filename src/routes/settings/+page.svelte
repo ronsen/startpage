@@ -13,18 +13,18 @@
     <div class="flex justify-between mb-3">
         Default engine:
 
-        <select bind:value={data.engine} name="engine" class="p-2.5 bg-zinc-700 text-white rounded-md outline-none font-bold">
+        <select bind:value={data.engine} name="engine" class="select select-bordered max-w-xs">
             <option value="DUCKDUCKGO">DuckDuckGo</option>
-            <option value="GOOGLE">Google</option>
             <option value="BING">Bing</option>
-            <option value="YAHOO">Yahoo!</option>
             <option value="BRAVE">Brave</option>
+            <option value="GOOGLE">Google</option>
+            <option value="YAHOO">Yahoo!</option>
             <option value="YOUTUBE">YouTube</option>
         </select>
     </div>
 
     <div class="flex justify-end">
-        <button type="submit" class="px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white font-bold outline-none uppercase">Save</button>
+        <button type="submit" class="btn btn-primary">Save</button>
     </div>
 </form>
 
