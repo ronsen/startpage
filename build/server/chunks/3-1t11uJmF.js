@@ -1,4 +1,4 @@
-import { r as redirect } from './index-8pACjapJ.js';
+import { r as redirect } from './index-VaxQO6Rv.js';
 
 const load = async ({ cookies }) => {
   const engine = cookies.get("engine") ?? "DUCKDUCKGO";
@@ -28,9 +28,9 @@ const index = 3;
 let component_cache;
 const component = async () => component_cache ??= (await import('./_page.svelte-hVAYZB1K.js')).default;
 const server_id = "src/routes/settings/+page.server.ts";
-const imports = ["_app/immutable/nodes/3.DTANKG-M.js","_app/immutable/chunks/scheduler.T6Z1JCpH.js","_app/immutable/chunks/index.BvfX4X9Y.js","_app/immutable/chunks/entry.CFcSnKI1.js"];
+const imports = ["_app/immutable/nodes/3.B-Wu_zP2.js","_app/immutable/chunks/scheduler.T6Z1JCpH.js","_app/immutable/chunks/index.BvfX4X9Y.js","_app/immutable/chunks/entry.CAYSZf0q.js"];
 const stylesheets = [];
 const fonts = [];
 
 export { component, fonts, imports, index, _page_server_ts as server, server_id, stylesheets };
-//# sourceMappingURL=3-Ary4scgT.js.map
+//# sourceMappingURL=3-1t11uJmF.js.map

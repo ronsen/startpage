@@ -51,9 +51,6 @@
 		<Link url="https://web.whatsapp.com/" name="WhatsApp" />
 		<Link url="https://www.messenger.com/" name="Messenger" />
 		<Link url="https://web.telegram.org/" name="Telegram" />
-		<Link url="https://guritan.vercel.app/" name="Guritan" />
-		<Link url="https://asikin.vercel.app/" name="Asikin" />
-		<Link url="https://ayatacak.vercel.app/" name="Ayat Acak Alkitab" />
 	</div>
 
 	<div class="grid grid-cols-3 gap-3">

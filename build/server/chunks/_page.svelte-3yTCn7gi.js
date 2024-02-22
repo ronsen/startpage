@@ -204,30 +204,6 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Link, "Link").$$render(
-    $$result,
-    {
-      url: "https://guritan.vercel.app/",
-      name: "Guritan"
-    },
-    {},
-    {}
-  )} ${validate_component(Link, "Link").$$render(
-    $$result,
-    {
-      url: "https://asikin.vercel.app/",
-      name: "Asikin"
-    },
-    {},
-    {}
-  )} ${validate_component(Link, "Link").$$render(
-    $$result,
-    {
-      url: "https://ayatacak.vercel.app/",
-      name: "Ayat Acak Alkitab"
-    },
-    {},
-    {}
   )}</div> <div class="grid grid-cols-3 gap-3"><ul><li>${validate_component(Link, "Link").$$render(
     $$result,
     {
@@ -296,4 +272,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-La5GSpWX.js.map
+//# sourceMappingURL=_page.svelte-3yTCn7gi.js.map
