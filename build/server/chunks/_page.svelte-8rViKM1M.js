@@ -223,7 +223,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</li> <li>${validate_component(Link, "Link").$$render(
     $$result,
     {
-      url: "https://pahe.in/",
+      url: "https://pahe.ink/",
       name: "Pahe Movies"
     },
     {},
@@ -272,4 +272,4 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 
 export { Page as default };
-//# sourceMappingURL=_page.svelte-3yTCn7gi.js.map
+//# sourceMappingURL=_page.svelte-8rViKM1M.js.map
