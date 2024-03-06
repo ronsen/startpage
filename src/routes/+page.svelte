@@ -57,7 +57,7 @@
 		<ul>
 			<li><Link url="https://aniwave.to/trending" name="Aniwave" /></li>
 			<li><Link url="https://psarips.com/" name="PSArips" /></li>
-			<li><Link url="https://pahe.in/" name="Pahe Movies" /></li>
+			<li><Link url="https://pahe.ink/" name="Pahe Movies" /></li>
 		</ul>
 		<ul>
 			<li><Link url="https://kick.com/" name="Kick" /></li>
