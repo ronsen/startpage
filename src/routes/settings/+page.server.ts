@@ -13,9 +13,6 @@ export const actions = {
 
         cookies.set('engine', String(engine), {
 			path: '/',
-			httpOnly: true,
-			sameSite: 'strict',
-			secure: process.env.NODE_ENV === 'production',
 			maxAge: 60 * 60 * 24 * 30
 		});
 

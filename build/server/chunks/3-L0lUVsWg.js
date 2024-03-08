@@ -9,9 +9,6 @@ const actions = {
     const { engine } = Object.fromEntries(await request.formData());
     cookies.set("engine", String(engine), {
       path: "/",
-      httpOnly: true,
-      sameSite: "strict",
-      secure: process.env.NODE_ENV === "production",
       maxAge: 60 * 60 * 24 * 30
     });
     redirect(302, "/");
@@ -28,9 +25,9 @@ const index = 3;
 let component_cache;
 const component = async () => component_cache ??= (await import('./_page.svelte-hVAYZB1K.js')).default;
 const server_id = "src/routes/settings/+page.server.ts";
-const imports = ["_app/immutable/nodes/3.libww9np.js","_app/immutable/chunks/scheduler.T6Z1JCpH.js","_app/immutable/chunks/index.BvfX4X9Y.js","_app/immutable/chunks/entry.BpEje5iS.js"];
+const imports = ["_app/immutable/nodes/3.CZV_vJj9.js","_app/immutable/chunks/scheduler.T6Z1JCpH.js","_app/immutable/chunks/index.BvfX4X9Y.js","_app/immutable/chunks/entry.5ijhbOOF.js"];
 const stylesheets = [];
 const fonts = [];
 
 export { component, fonts, imports, index, _page_server_ts as server, server_id, stylesheets };
-//# sourceMappingURL=3-dwA1DYcP.js.map
+//# sourceMappingURL=3-L0lUVsWg.js.map
