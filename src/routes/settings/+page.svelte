@@ -11,12 +11,12 @@
 
 <form method="post" use:enhance>
     <div class="flex justify-between mb-3">
-        Default engine:
+        Preferred search engine:
 
         <select bind:value={data.engine} name="engine" class="select select-bordered max-w-xs">
-            <option value="DUCKDUCKGO">DuckDuckGo</option>
             <option value="BING">Bing</option>
             <option value="BRAVE">Brave</option>
+            <option value="DUCKDUCKGO">DuckDuckGo</option>
             <option value="GOOGLE">Google</option>
             <option value="YAHOO">Yahoo!</option>
             <option value="YOUTUBE">YouTube</option>
