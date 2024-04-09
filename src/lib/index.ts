@@ -4,3 +4,7 @@ export function extractDomain(link: string): string {
 
 	return url.hostname;
 }
+
+export function getFirstLetter(s: string): string {
+	return s.charAt(0);
+}
