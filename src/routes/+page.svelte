@@ -17,25 +17,25 @@
 
 	<div class="grid grid-cols-3 gap-3 leading-loose">
 		<ul>
-			<li><Link url="https://www.youtube.com/" name="YouTube" icon="y" /></li>
-			<li><Link url="https://twitter.com/" name="Twitter" icon="t" /></li>
-			<li><Link url="https://www.instagram.com/" name="Instagram" icon="i" /></li>
-			<li><Link url="https://www.reddit.com/" name="Reddit" icon="r" /></li>
-			<li><Link url="https://news.ycombinator.com/" name="Hacker News" icon="h" /></li>
+			<li><Link url="https://www.youtube.com/" name="YouTube" /></li>
+			<li><Link url="https://twitter.com/" name="Twitter" /></li>
+			<li><Link url="https://www.instagram.com/" name="Instagram" /></li>
+			<li><Link url="https://www.reddit.com/" name="Reddit" /></li>
+			<li><Link url="https://news.ycombinator.com/" name="Hacker News" /></li>
 		</ul>
 		<ul>
-			<li><Link url="https://www.vidio.com/" name="Vidio" icon="v" /></li>
-			<li><Link url="https://www.twitch.tv/" name="Twitch" icon="t" /></li>
-			<li><Link url="https://www.tiktok.com/" name="TikTok" icon="t" /></li>
-			<li><Link url="https://open.spotify.com/" name="Spotify" icon="s" /></li>
-			<li><Link url="https://music.youtube.com/" name="YouTube Music" icon="y" /></li>
+			<li><Link url="https://www.vidio.com/" name="Vidio" /></li>
+			<li><Link url="https://www.twitch.tv/" name="Twitch" /></li>
+			<li><Link url="https://www.tiktok.com/" name="TikTok" /></li>
+			<li><Link url="https://open.spotify.com/" name="Spotify" /></li>
+			<li><Link url="https://music.youtube.com/" name="YouTube Music" /></li>
 		</ul>
 		<ul>
-			<li><Link url="https://github.com/" name="Github" icon="g" /></li>
-			<li><Link url="https://www.inoreader.com/" name="Inoreader" icon="i" /></li>
-			<li><Link url="https://feedly.com/" name="Feedly" icon="f" /></li>
-			<li><Link url="https://translate.google.com/" name="Google Translate" icon="g" /></li>
-			<li><Link url="https://chat.openai.com/" name="ChatGPT" icon="c" /></li>
+			<li><Link url="https://github.com/" name="Github" /></li>
+			<li><Link url="https://www.inoreader.com/" name="Inoreader" /></li>
+			<li><Link url="https://feedly.com/" name="Feedly" /></li>
+			<li><Link url="https://translate.google.com/" name="Google Translate" /></li>
+			<li><Link url="https://chat.openai.com/" name="ChatGPT" /></li>
 		</ul>
 	</div>
 </section>
@@ -44,8 +44,8 @@
 	<h4 class="uppercase text-xs font-bold mb-3">Other Links:</h4>
 
 	<div class="grid grid-cols-3 gap-3 mb-3 leading-loose">
-		<Link url="https://web.whatsapp.com/" name="WhatsApp" icon="w" />
-		<Link url="https://www.messenger.com/" name="Messenger" icon="m" />
-		<Link url="https://web.telegram.org/" name="Telegram" icon="t" />
+		<Link url="https://web.whatsapp.com/" name="WhatsApp" />
+		<Link url="https://www.messenger.com/" name="Messenger" />
+		<Link url="https://web.telegram.org/" name="Telegram" />
 	</div>
 </section>

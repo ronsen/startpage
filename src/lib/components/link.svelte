@@ -1,7 +1,8 @@
 <script lang="ts">
 	export let url: string;
 	export let name: string;
-	export let icon: string;
+	
+	const icon = name.charAt(0).toLowerCase();
 
 	function popup() {
 		window.open(url, "", "height=800,width=1300,toolbar=no,scrollbars=yes");
