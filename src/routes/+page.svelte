@@ -35,7 +35,7 @@
 			<li><Link url="https://www.inoreader.com/" name="Inoreader" /></li>
 			<li><Link url="https://feedly.com/" name="Feedly" /></li>
 			<li><Link url="https://translate.google.com/" name="Google Translate" /></li>
-			<li><Link url="https://chat.openai.com/" name="ChatGPT" /></li>
+			<li><Link url="https://chatgpt.com/" name="ChatGPT" /></li>
 		</ul>
 	</div>
 </section>
