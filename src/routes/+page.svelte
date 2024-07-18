@@ -44,7 +44,7 @@
 	{#if links.length > 0}
 		<div class="grid grid-cols-3 gap-3 leading-loose">
 			{#each links as link}
-				<Link url={link.url} name={link.name} on:refresh={load}  bind:links />
+				<Link url={link.url} name={link.name} on:refresh={load} bind:links />
 			{/each}
 		</div>
 	{/if}

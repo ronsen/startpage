@@ -2,16 +2,15 @@
 	import { createEventDispatcher } from "svelte";
 	import type { LinkObject } from "../../app";
 
-	export let url: string;
-	export let name: string;
-
-	export let links: LinkObject[];
-
 	const dispatch = createEventDispatcher();
 
-	const icon = name.charAt(0).toLowerCase();
-
+	export let url: string;
+	export let name: string;
+	export let links: LinkObject[];
+	
 	let destroy: HTMLDialogElement;
+
+	const icon = name.charAt(0).toLowerCase();
 
 	function popup() {
 		window.open(url, "", "height=800,width=1300,toolbar=no,scrollbars=yes");
@@ -22,7 +21,7 @@
 		links.splice(i, 1);
 
 		localStorage.setItem("links", JSON.stringify(links));
-		
+
 		destroy.close();
 
 		dispatch("refresh");
