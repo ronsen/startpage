@@ -17,18 +17,7 @@
 		if (s) {
 			links = JSON.parse(s);
 		} else {
-			localStorage.setItem('links', JSON.stringify(links));
-		}
-	}
-
-	function deleteLink(url: string) {
-		if (confirm("Delete this link?")) {
-			const i = links.findIndex((link) => link.url == url);
-			links.splice(i, 1);
-
 			localStorage.setItem("links", JSON.stringify(links));
-
-			load();
 		}
 	}
 </script>
@@ -55,13 +44,7 @@
 	{#if links.length > 0}
 		<div class="grid grid-cols-3 gap-3 leading-loose">
 			{#each links as link}
-				<div class="flex justify-between items-center gap-3">
-					<Link url={link.url} name={link.name} />
-					<button
-						on:click|preventDefault={() => deleteLink(link.url)}
-						class="hover:text-white"><i class="bi bi-x"></i></button
-					>
-				</div>
+				<Link url={link.url} name={link.name} on:refresh={load}  bind:links />
 			{/each}
 		</div>
 	{/if}

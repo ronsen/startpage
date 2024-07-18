@@ -55,7 +55,9 @@
 						required
 					/>
 				</div>
-				<button type="submit" class="btn btn-primary">Save</button>
+				<div class="text-right">
+					<button type="submit" class="btn btn-primary">Save</button>
+				</div>
 			</form>
 		</div>
 	</div>
