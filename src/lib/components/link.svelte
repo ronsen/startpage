@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let url: string;
 	export let name: string;
-	
+
 	const icon = name.charAt(0).toLowerCase();
 
 	function popup() {
@@ -9,7 +9,10 @@
 	}
 </script>
 
-<div class="inline-flex items-center gap-3">
-	<button class="cursor-pointer font-bold hover:text-white" on:click|preventDefault={popup}>{icon}</button>
+<div class="inline-flex gap-2">
+	<button
+		class="cursor-pointer font-bold hover:text-white"
+		on:click|preventDefault={popup}>{icon}</button
+	>
 	<a href={url} class="hover:text-white">{name}</a>
 </div>
