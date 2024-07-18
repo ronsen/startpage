@@ -10,4 +10,9 @@ declare global {
 	}
 }
 
-export {};
+export type LinkObject = {
+	name: string;
+	url: string;
+};
+
+export { };
