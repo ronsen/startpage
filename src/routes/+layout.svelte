@@ -10,7 +10,7 @@
 	<slot />
 </main>
 
-<footer class="absolute bottom-0 left-0 w-full text-xs py-3">
+<footer class="absolute bottom-0 left-0 w-full py-3">
 	<div class="flex justify-center">
 		<a href="https://github.com/ronsen/startpage" target="_blank"><i class="bi bi-github"></i></a>
 	</div>

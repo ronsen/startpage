@@ -7,7 +7,7 @@
 	export let url: string;
 	export let name: string;
 	export let links: LinkObject[];
-	
+
 	let destroy: HTMLDialogElement;
 
 	const icon = name.charAt(0).toLowerCase();
@@ -53,11 +53,13 @@
 		<h3 class="text-lg font-bold">Delete this link?</h3>
 		<p class="py-4">{name}</p>
 		<div class="modal-action">
-			<button on:click={() => destroy.close()} class="btn btn-error"
-				>No</button
+			<button
+				on:click={() => destroy.close()}
+				class="btn btn-neutral btn-sm">No</button
 			>
-			<button on:click={() => deleteLink(url)} class="btn btn-primary"
-				>Yes</button
+			<button
+				on:click={() => deleteLink(url)}
+				class="btn btn-error btn-sm">Yes</button
 			>
 		</div>
 	</div>
