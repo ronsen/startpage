@@ -13,7 +13,7 @@
 	const icon = name.charAt(0).toLowerCase();
 
 	function popup() {
-		window.open(url, "", "height=800,width=1300,toolbar=no,scrollbars=yes");
+		window.open(url, "", "height=800,width=1400,toolbar=no,scrollbars=yes");
 	}
 
 	function deleteLink(url: string) {
