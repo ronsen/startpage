@@ -5,7 +5,7 @@
 	let engine = "GOOGLE";
 
 	function handleSubmit() {
-		const key: string = encodeURIComponent(q.value);
+		const key: string = q.value.replace(' ', '+');
 		const egn: string = e.value;
 
 		let url: string = "";
