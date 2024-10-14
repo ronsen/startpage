@@ -5,7 +5,7 @@
 	let engine = "GOOGLE";
 
 	function handleSubmit() {
-		const key: string = q.value.replace(' ', '+');
+		const key: string = q.value.replaceAll(' ', '+');
 		const egn: string = e.value;
 
 		let url: string = "";
