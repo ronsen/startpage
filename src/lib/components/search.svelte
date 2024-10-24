@@ -41,7 +41,7 @@
 		<select
 			bind:this={e}
 			bind:value={engine}
-			class="p-2 border border-black bg-black text-white"
+			class="p-2 border border-black bg-black text-white focus:outline-none"
 		>
 			<option disabled selected>{engine}</option>
 			<option value="DUCKDUCKGO">DuckDuckGo</option>
@@ -53,7 +53,7 @@
 		</select>
 		<button
 			type="submit"
-			class="p-2 border bg-black border-black text-white"
+			class="p-2 border bg-black border-black text-white focus:outline-none"
 			><i class="bi bi-search"></i></button
 		>
 	</div>

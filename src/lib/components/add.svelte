@@ -28,7 +28,7 @@
 
 <dialog
 	bind:this={create}
-	class="p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white/70 bg-zinc-900"
+	class="p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white/70 bg-zinc-900 backdrop:backdrop-blur-sm"
 >
 	<form method="dialog">
 		<button class="absolute right-2 top-2 hover:font-semibold"
