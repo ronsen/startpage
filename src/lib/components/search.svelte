@@ -5,7 +5,7 @@
 	let engine = "GOOGLE";
 
 	function handleSubmit() {
-		const key: string = q.value.replaceAll(' ', '+');
+		const key: string = q.value.replaceAll(" ", "+");
 		const egn: string = e.value;
 
 		let url: string = "";
@@ -29,19 +29,19 @@
 </script>
 
 <form method="get" on:submit|preventDefault={handleSubmit}>
-	<div class="w-full join">
+	<div class="flex">
 		<!-- svelte-ignore a11y-autofocus -->
 		<input
 			bind:this={q}
 			type="text"
-			class="w-full input input-bordered join-item"
+			class="w-full p-2 border border-black bg-black text-white focus:outline-none"
 			required
 			autofocus
 		/>
 		<select
 			bind:this={e}
 			bind:value={engine}
-			class="select select-bordered join-item"
+			class="p-2 border border-black bg-black text-white"
 		>
 			<option disabled selected>{engine}</option>
 			<option value="DUCKDUCKGO">DuckDuckGo</option>
@@ -51,7 +51,9 @@
 			<option value="YAHOO">Yahoo!</option>
 			<option value="YOUTUBE">YouTube</option>
 		</select>
-		<button type="submit" class="btn btn-neutral join-item"
+		<button
+			type="submit"
+			class="p-2 border bg-black border-black text-white"
 			><i class="bi bi-search"></i></button
 		>
 	</div>
