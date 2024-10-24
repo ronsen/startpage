@@ -23,7 +23,7 @@
 </script>
 
 <button on:click={() => create.showModal()}
-	><i class="bi bi-plus-circle"></i></button
+	><i class="bi bi-plus hover:bg-black hover:rounded"></i></button
 >
 
 <dialog
@@ -32,7 +32,7 @@
 >
 	<form method="dialog">
 		<button class="absolute right-2 top-2 hover:font-semibold"
-			><i class="bi bi-x"></i></button
+			><i class="bi bi-x hover:bg-black hover:rounded"></i></button
 		>
 	</form>
 	<h3 class="font-semibold">Add new link</h3>

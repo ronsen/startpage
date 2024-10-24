@@ -37,7 +37,7 @@
 		<a href={url}>{name}</a>
 	</div>
 	<button on:click|preventDefault={() => destroy.showModal()}
-		><i class="bi bi-x"></i></button
+		><i class="bi bi-x hover:bg-black hover:rounded"></i></button
 	>
 </div>
 
@@ -46,7 +46,9 @@
 	class="p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white/70 bg-zinc-900"
 >
 	<form method="dialog">
-		<button class="absolute right-2 top-2"><i class="bi bi-x"></i></button>
+		<button class="absolute right-2 top-2"
+			><i class="bi bi-x hover:bg-black hover:rounded"></i></button
+		>
 	</form>
 	<h3 class="font-semibold">Delete this link?</h3>
 	<p class="py-4">{name}</p>
