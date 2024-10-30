@@ -1,17 +1,15 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-
-	const days = [
+	let days = [
 		"Sunday",
 		"Monday",
 		"Tuesday",
 		"Wednesday",
 		"Thursday",
 		"Friday",
-		"Saturday"
+		"Saturday",
 	];
 
-	const months = [
+	let months = [
 		"January",
 		"February",
 		"March",
@@ -23,21 +21,25 @@
 		"September",
 		"October",
 		"November",
-		"December"
+		"December",
 	];
 
-	let time = new Date();
+	let time = $state(new Date());
 
-	$: day = days[time.getDay()];
-	$: date = time.getDate();
-	$: month = months[time.getMonth()];
-	$: year = time.getFullYear();
+	const day = $derived.by(() => days[time.getDay()]);
+	const date = $derived.by(() => time.getDate());
+	const month = $derived.by(() => months[time.getMonth()]);
+	const year = $derived.by(() => time.getFullYear());
 
-	$: hours = time.getHours().toString().padStart(2, "0");
-	$: minutes = time.getMinutes().toString().padStart(2, "0");
-	$: seconds = time.getSeconds().toString().padStart(2, "0");
+	const hours = $derived.by(() => time.getHours().toString().padStart(2, "0"));
+	const minutes = $derived.by(() =>
+		time.getMinutes().toString().padStart(2, "0"),
+	);
+	const seconds = $derived.by(() =>
+		time.getSeconds().toString().padStart(2, "0"),
+	);
 
-	onMount(() => {
+	$effect(() => {
 		const interval = setInterval(() => {
 			time = new Date();
 		}, 1000);

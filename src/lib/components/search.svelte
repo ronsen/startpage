@@ -51,6 +51,7 @@
 			<option value="YAHOO">Yahoo!</option>
 			<option value="YOUTUBE">YouTube</option>
 		</select>
+		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
 			type="submit"
 			class="p-2 border bg-black border-black text-white focus:outline-none"

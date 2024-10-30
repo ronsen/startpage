@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import type { LinkObject } from "../app";
+	import type { LinkObject } from "$lib"; 
 
 	import Clock from "$lib/components/clock.svelte";
 	import Search from "$lib/components/search.svelte";
