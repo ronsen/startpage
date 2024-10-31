@@ -1,12 +1,14 @@
 <script lang="ts">
-	import { createEventDispatcher } from "svelte";
 	import type { LinkObject } from "$lib";
 
-	const dispatch = createEventDispatcher();
+	interface Props {
+		url: string;
+		name: string;
+		links: LinkObject[];
+		load: any;
+	}
 
-	export let url: string;
-	export let name: string;
-	export let links: LinkObject[];
+	let { url, name, links, load }: Props = $props();
 
 	let destroy: HTMLDialogElement;
 
@@ -24,7 +26,7 @@
 
 		destroy.close();
 
-		dispatch("refresh");
+		load();
 	}
 </script>
 

@@ -2,7 +2,7 @@
 	let q: HTMLInputElement;
 	let e: HTMLSelectElement;
 
-	let engine = "GOOGLE";
+	let engine = $state("GOOGLE");
 
 	function handleSubmit() {
 		const key: string = q.value.replaceAll(" ", "+");
@@ -28,9 +28,9 @@
 	}
 </script>
 
-<form method="get" on:submit|preventDefault={handleSubmit}>
+<form method="get" onsubmit={handleSubmit}>
 	<div class="flex">
-		<!-- svelte-ignore a11y-autofocus -->
+		<!-- svelte-ignore a11y_autofocus -->
 		<input
 			bind:this={q}
 			type="text"

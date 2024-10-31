@@ -26,18 +26,14 @@
 
 	let time = $state(new Date());
 
-	const day = $derived.by(() => days[time.getDay()]);
-	const date = $derived.by(() => time.getDate());
-	const month = $derived.by(() => months[time.getMonth()]);
-	const year = $derived.by(() => time.getFullYear());
+	const day = $derived(days[time.getDay()]);
+	const date = $derived(time.getDate());
+	const month = $derived(months[time.getMonth()]);
+	const year = $derived(time.getFullYear());
 
-	const hours = $derived.by(() => time.getHours().toString().padStart(2, "0"));
-	const minutes = $derived.by(() =>
-		time.getMinutes().toString().padStart(2, "0"),
-	);
-	const seconds = $derived.by(() =>
-		time.getSeconds().toString().padStart(2, "0"),
-	);
+	const hours = $derived(time.getHours().toString().padStart(2, "0"));
+	const minutes = $derived(time.getMinutes().toString().padStart(2, "0"));
+	const seconds = $derived(time.getSeconds().toString().padStart(2, "0"));
 
 	$effect(() => {
 		const interval = setInterval(() => {

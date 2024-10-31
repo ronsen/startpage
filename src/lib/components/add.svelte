@@ -2,10 +2,10 @@
 	import type { LinkObject } from "$lib";
 
 	let create: HTMLDialogElement;
-	let name: string;
-	let url: string;
+	let name: string = $state("");
+	let url: string = $state("");
 
-	export let links: LinkObject[] = [];
+	let { links, load }: { links: LinkObject[]; load: any; } = $props();
 
 	function submit() {
 		const s: string | null = localStorage.getItem("links");
@@ -19,6 +19,8 @@
 		name = "";
 		url = "";
 		create.close();
+
+		load();
 	}
 </script>
 
