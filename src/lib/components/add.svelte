@@ -41,7 +41,7 @@
 					type="text"
 					bind:value={name}
 					placeholder="Name"
-					class="w-full rounded-lg bg-black"
+					class="w-full p-2 border border-black bg-black text-white focus:outline-none rounded-lg"
 					required
 				/>
 			</div>
@@ -50,7 +50,7 @@
 					type="url"
 					bind:value={url}
 					placeholder="URL"
-					class="w-full rounded-lg bg-black"
+					class="w-full p-2 border border-black bg-black text-white focus:outline-none rounded-lg"
 					required
 				/>
 			</div>

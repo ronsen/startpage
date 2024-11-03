@@ -32,11 +32,11 @@
 	<div class="flex">
 		<!-- svelte-ignore a11y_autofocus -->
 		<input
-			bind:this={q}
-			type="text"
-			class="w-full p-2 border border-black bg-black text-white focus:outline-none"
-			required
 			autofocus
+			bind:this={q}
+			class="w-full p-2 border border-black bg-black text-white focus:outline-none rounded-l-lg"
+			required
+			type="text"
 		/>
 		<select
 			bind:this={e}
@@ -53,9 +53,8 @@
 		</select>
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
-			type="submit"
-			class="p-2 border bg-black border-black text-white focus:outline-none"
-			><i class="bi bi-search"></i></button
+			class="p-2 border bg-black border-black text-white focus:outline-none rounded-r-lg"
+			type="submit"><i class="bi bi-search"></i></button
 		>
 	</div>
 </form>
