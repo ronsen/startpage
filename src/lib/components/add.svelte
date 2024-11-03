@@ -41,7 +41,7 @@
 					type="text"
 					bind:value={name}
 					placeholder="Name"
-					class="w-full p-2 rounded-lg bg-black border border-zinc-800"
+					class="form-input w-full rounded-lg bg-black"
 					required
 				/>
 			</div>
@@ -50,7 +50,7 @@
 					type="url"
 					bind:value={url}
 					placeholder="URL"
-					class="w-full p-2 rounded-lg bg-black border border-zinc-800"
+					class="form-input w-full rounded-lg bg-black"
 					required
 				/>
 			</div>
