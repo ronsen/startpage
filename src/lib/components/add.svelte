@@ -5,7 +5,7 @@
 	let name: string = $state("");
 	let url: string = $state("");
 
-	let { links, load }: { links: LinkObject[]; load: any; } = $props();
+	let { links, load }: { links: LinkObject[]; load: any } = $props();
 
 	function submit() {
 		const s: string | null = localStorage.getItem("links");
@@ -31,17 +31,11 @@
 
 <dialog
 	bind:this={create}
-	class="p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white/70 bg-zinc-900 backdrop:backdrop-blur-sm"
+	class="border border-zinc-800 rounded-lg shadow-lg w-full md:w-1/2 text-white/60 bg-zinc-900 backdrop:backdrop-blur-sm"
 >
-	<form method="dialog">
-		<!-- svelte-ignore a11y_consider_explicit_label -->
-		<button class="absolute right-2 top-2 hover:font-semibold"
-			><i class="bi bi-x hover:bg-black hover:rounded"></i></button
-		>
-	</form>
-	<h3 class="font-semibold">Add new link</h3>
-	<div class="py-4">
-		<form onsubmit={submit}>
+	<form onsubmit={submit}>
+		<div class="p-4">
+			<h3 class="font-semibold mb-3">Add new link</h3>
 			<div class="mb-4">
 				<input
 					type="text"
@@ -60,13 +54,18 @@
 					required
 				/>
 			</div>
-			<div class="text-right">
-				<button
-					type="submit"
-					class="px-3 py-2 text-sm border border-zinc-800 bg-zinc-800 text-white/90 hover:bg-zinc-700 rounded-lg"
-					>Save</button
-				>
-			</div>
-		</form>
-	</div>
+		</div>
+		<div class="flex justify-between gap-4 items-center p-4 bg-zinc-800">
+			<button
+				onclick={() => create.close()}
+				class="px-3 py-2 text-sm border border-zinc-700 bg-zinc-700 text-white/90 hover:bg-zinc-600 rounded-lg"
+				>Cancel</button
+			>
+			<button
+				type="submit"
+				class="px-3 py-2 text-sm border border-zinc-100 bg-zinc-100 text-black/90 hover:bg-zinc-200 rounded-lg"
+				>Save</button
+			>
+		</div>
+	</form>
 </dialog>

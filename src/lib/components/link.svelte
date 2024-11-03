@@ -45,25 +45,21 @@
 
 <dialog
 	bind:this={destroy}
-	class="p-6 rounded-lg shadow-lg w-full md:w-1/2 text-white/70 bg-zinc-900 backdrop:backdrop-blur-sm"
+	class="border border-zinc-800 rounded-lg shadow-lg w-full md:w-1/2 text-white/60 bg-zinc-900 backdrop:backdrop-blur-sm"
 >
-	<form method="dialog">
-		<!-- svelte-ignore a11y_consider_explicit_label -->
-		<button class="absolute right-2 top-2"
-			><i class="bi bi-x hover:bg-black hover:rounded"></i></button
-		>
-	</form>
-	<h3 class="font-semibold">Delete this link?</h3>
-	<p class="py-4">{name}</p>
-	<div class="text-right">
+	<div class="p-4">
+		<h3 class="font-semibold mb-3">Delete this link?</h3>
+		<p>{name}</p>
+	</div>
+	<div class="flex justify-between gap-4 items-center p-4 bg-zinc-800">
 		<button
 			onclick={() => destroy.close()}
-			class="px-3 py-2 text-sm border border-zinc-800 bg-zinc-800 text-white/90 hover:bg-zinc-700 rounded-lg"
+			class="px-3 py-2 text-sm border border-zinc-700 bg-zinc-700 text-white/90 hover:bg-zinc-600 rounded-lg"
 			>No</button
 		>
 		<button
 			onclick={() => deleteLink(url)}
-			class="px-3 py-2 text-sm border border-red-800 bg-red-500 text-white hover:bg-red-600 rounded-lg focus:outline-none"
+			class="px-3 py-2 text-sm border border-zinc-100 bg-zinc-100 text-black/90 hover:bg-zinc-200 rounded-lg"
 			>Yes</button
 		>
 	</div>
