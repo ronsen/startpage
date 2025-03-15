@@ -39,7 +39,7 @@
 		<a href={url}>{name}</a>
 	</div>
 	<!-- svelte-ignore a11y_consider_explicit_label -->
-	<button onclick={() => destroy.showModal()} class="cursor-pointer"
+	<button onclick={() => destroy.showModal()} class="cursor-pointer text-zinc-300 dark:text-zinc-700 hover:text-zinc-500 dark:hover:text-zinc-400"
 		><X size={16} /></button
 	>
 </div>
