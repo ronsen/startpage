@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Search } from "@lucide/svelte";
+
 	let q: HTMLInputElement;
 	let e: HTMLSelectElement;
 
@@ -34,14 +36,14 @@
 		<input
 			autofocus
 			bind:this={q}
-			class="w-full p-2 border border-black bg-black text-white focus:outline-none rounded-l-lg"
+			class="w-full p-2 border border-zinc-100 dark:border-black bg-zinc-100 dark:bg-black dark:text-white/90 focus:outline-hidden rounded-l-lg"
 			required
 			type="text"
 		/>
 		<select
 			bind:this={e}
 			bind:value={engine}
-			class="p-2 border border-black bg-black text-white focus:outline-none"
+			class="p-2 border border-zinc-100 dark:border-black bg-zinc-100 dark:bg-black dark:text-white/90 focus:outline-hidden"
 		>
 			<option disabled selected>{engine}</option>
 			<option value="DUCKDUCKGO">DuckDuckGo</option>
@@ -53,8 +55,8 @@
 		</select>
 		<!-- svelte-ignore a11y_consider_explicit_label -->
 		<button
-			class="p-2 border bg-black border-black text-white focus:outline-none rounded-r-lg"
-			type="submit"><i class="bi bi-search"></i></button
+			class="p-2 border border-zinc-100 dark:bg-black bg-zinc-100 dark:border-black dark:text-white/90 focus:outline-hidden rounded-r-lg cursor-pointer"
+			type="submit"><Search size={16} /></button
 		>
 	</div>
 </form>
