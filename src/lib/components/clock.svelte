@@ -1,52 +1,25 @@
 <script lang="ts">
-	let days = [
-		"Sunday",
-		"Monday",
-		"Tuesday",
-		"Wednesday",
-		"Thursday",
-		"Friday",
-		"Saturday",
-	];
+	import type { Action } from "svelte/action";
 
-	let months = [
-		"January",
-		"February",
-		"March",
-		"April",
-		"May",
-		"June",
-		"July",
-		"August",
-		"September",
-		"October",
-		"November",
-		"December",
-	];
+	const time: Action = (node) => {
+		$effect(() => {
+			const interval = setInterval(() => {
+				const time = new Date();
+				const hours = time.getHours().toString().padStart(2, "0");
+				const minutes = time.getMinutes().toString().padStart(2, "0");
+				const seconds = time.getSeconds().toString().padStart(2, "0");
 
-	let time = $state(new Date());
+				node.textContent = `${hours}:${minutes}:${seconds}`;
+			}, 1000);
 
-	const day = $derived(days[time.getDay()]);
-	const date = $derived(time.getDate());
-	const month = $derived(months[time.getMonth()]);
-	const year = $derived(time.getFullYear());
-
-	const hours = $derived(time.getHours().toString().padStart(2, "0"));
-	const minutes = $derived(time.getMinutes().toString().padStart(2, "0"));
-	const seconds = $derived(time.getSeconds().toString().padStart(2, "0"));
-
-	$effect(() => {
-		const interval = setInterval(() => {
-			time = new Date();
-		}, 1000);
-
-		return () => {
-			clearInterval(interval);
-		};
-	});
+			return () => {
+				clearInterval(interval);
+			};
+		});
+	};
 </script>
 
 <div class="flex justify-between gap-3 uppercase text-xs font-bold">
-	<div>{day}, {date} {month} {year}</div>
-	<div>{hours}:{minutes}:{seconds}</div>
+	<div>{new Date().toDateString()}</div>
+	<div use:time></div>
 </div>
