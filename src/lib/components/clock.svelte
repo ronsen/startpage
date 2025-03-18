@@ -1,15 +1,23 @@
 <script lang="ts">
 	import type { Action } from "svelte/action";
 
+	const date = new Date();
+	const result = date.toLocaleDateString("en-GB", {
+		weekday: "short",
+		day: "2-digit",
+		month: "short",
+		year: "numeric",
+	});
+
 	const time: Action = (node) => {
 		$effect(() => {
 			const interval = setInterval(() => {
-				const time = new Date();
-				const hours = time.getHours().toString().padStart(2, "0");
-				const minutes = time.getMinutes().toString().padStart(2, "0");
-				const seconds = time.getSeconds().toString().padStart(2, "0");
+				const date = new Date();
+				const result = date.toLocaleTimeString("en-GB", {
+					hour12: false,
+				});
 
-				node.textContent = `${hours}:${minutes}:${seconds}`;
+				node.textContent = result;
 			}, 1000);
 
 			return () => {
@@ -20,6 +28,6 @@
 </script>
 
 <div class="flex justify-between gap-3 uppercase text-xs font-bold">
-	<div>{new Date().toDateString()}</div>
+	<div>{result}</div>
 	<div use:time></div>
 </div>
