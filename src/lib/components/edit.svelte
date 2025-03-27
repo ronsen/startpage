@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { LinkObject } from "$lib";
-	import { Pencil } from "@lucide/svelte";
+	import { SquarePen } from "@lucide/svelte";
+	import Delete from "./delete.svelte";
 
 	interface Props {
 		id: number;
@@ -19,7 +20,7 @@
 	function submit() {
 		links[id].name = newName;
 		links[id].url = newUrl;
-		
+
 		localStorage.setItem("links", JSON.stringify(links));
 
 		dialog.close();
@@ -31,16 +32,21 @@
 <button
 	onclick={() => dialog.showModal()}
 	class="cursor-pointer text-zinc-300 dark:text-zinc-700 hover:text-zinc-500 dark:hover:text-zinc-400"
-	><Pencil size={16} /></button
+	><SquarePen size={16} /></button
 >
 
 <dialog
 	bind:this={dialog}
 	class="m-auto border border-zinc-100 dark:border-zinc-800 rounded-lg shadow-lg w-full md:w-1/2 dark:text-white/60 dark:bg-zinc-900 backdrop:backdrop-blur-xs"
 >
-	<form onsubmit={submit}>
-		<div class="p-4">
+	<div class="px-4 pt-4">
+		<div class="flex justify-between items-center gap-4">
 			<h3 class="font-semibold mb-3">Update link</h3>
+			<Delete {id} {url} {name} {links} {load} />
+		</div>
+	</div>
+	<form onsubmit={submit}>
+		<div class="px-4">
 			<div class="mb-4">
 				<input
 					type="text"

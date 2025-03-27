@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { LinkObject } from "$lib";
-	import Delete from "./delete.svelte";
 	import Edit from "./edit.svelte";
 
 	interface Props {
@@ -29,6 +28,5 @@
 	</div>
 	<div class="inline-flex gap-2">
 		<Edit {id} {url} {name} {links} {load} />
-		<Delete {id} {url} {name} {links} {load} />
 	</div>
 </div>

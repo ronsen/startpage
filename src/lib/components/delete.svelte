@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { LinkObject } from "$lib";
-	import { X } from "@lucide/svelte";
 
 	interface Props {
 		id: number;
@@ -27,8 +26,8 @@
 
 <button
 	onclick={() => dialog.showModal()}
-	class="cursor-pointer text-zinc-300 dark:text-zinc-700 hover:text-zinc-500 dark:hover:text-zinc-400"
-	><X size={16} /></button
+	class="cursor-pointer text-red-400 dark:text-red-700 hover:text-red-500 dark:hover:text-red-400"
+	>Delete</button
 >
 
 <dialog
