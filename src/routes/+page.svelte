@@ -43,13 +43,8 @@
 
 	{#if links.length > 0}
 		<div class="grid grid-cols-3 gap-3 leading-loose">
-			{#each links as link}
-				<Link
-					url={link.url}
-					name={link.name}
-					{load}
-					{links}
-				/>
+			{#each links as link, i}
+				<Link id={i} url={link.url} name={link.name} {load} {links} />
 			{/each}
 		</div>
 	{/if}

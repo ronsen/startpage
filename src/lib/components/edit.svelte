@@ -1,32 +1,37 @@
 <script lang="ts">
 	import type { LinkObject } from "$lib";
-	import { CirclePlus } from "@lucide/svelte";
+	import { Pencil } from "@lucide/svelte";
+
+	interface Props {
+		id: number;
+		url: string;
+		name: string;
+		links: LinkObject[];
+		load: any;
+	}
+
+	let { id, url, name, links, load }: Props = $props();
 
 	let dialog: HTMLDialogElement;
-	let name: string = $state("");
-	let url: string = $state("");
-
-	let { links, load }: { links: LinkObject[]; load: any } = $props();
+	let newName: string = $state(name);
+	let newUrl: string = $state(url);
 
 	function submit() {
-		const s: string | null = localStorage.getItem("links");
-		if (s) {
-			links = JSON.parse(s);
-		}
-
-		links.push({ name, url });
+		links[id].name = newName;
+		links[id].url = newUrl;
+		
 		localStorage.setItem("links", JSON.stringify(links));
 
-		name = "";
-		url = "";
 		dialog.close();
 
 		load();
 	}
 </script>
 
-<button onclick={() => dialog.showModal()} class="cursor-pointer"
-	><CirclePlus size={16} /></button
+<button
+	onclick={() => dialog.showModal()}
+	class="cursor-pointer text-zinc-300 dark:text-zinc-700 hover:text-zinc-500 dark:hover:text-zinc-400"
+	><Pencil size={16} /></button
 >
 
 <dialog
@@ -35,11 +40,11 @@
 >
 	<form onsubmit={submit}>
 		<div class="p-4">
-			<h3 class="font-semibold mb-3">Add new link</h3>
+			<h3 class="font-semibold mb-3">Update link</h3>
 			<div class="mb-4">
 				<input
 					type="text"
-					bind:value={name}
+					bind:value={newName}
 					placeholder="Name"
 					class="w-full p-2 border border-zinc-200 dark:border-black dark:bg-black dark:text-white focus:outline-hidden rounded-lg"
 					required
@@ -48,7 +53,7 @@
 			<div class="mb-4">
 				<input
 					type="url"
-					bind:value={url}
+					bind:value={newUrl}
 					placeholder="URL"
 					class="w-full p-2 border border-zinc-200 dark:border-black dark:bg-black dark:text-white focus:outline-hidden rounded-lg"
 					required

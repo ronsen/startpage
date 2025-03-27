@@ -3,19 +3,19 @@
 	import { X } from "@lucide/svelte";
 
 	interface Props {
+		id: number;
 		url: string;
 		name: string;
 		links: LinkObject[];
 		load: any;
 	}
 
-	let { url, links, load }: Props = $props();
+	let { id, url, name, links, load }: Props = $props();
 
 	let dialog: HTMLDialogElement;
 
-	function deleteLink(url: string) {
-		const i = links.findIndex((link) => link.url == url);
-		links.splice(i, 1);
+	function deleteLink() {
+		links.splice(id, 1);
 
 		localStorage.setItem("links", JSON.stringify(links));
 
@@ -48,7 +48,7 @@
 			>No</button
 		>
 		<button
-			onclick={() => deleteLink(url)}
+			onclick={() => deleteLink()}
 			class="px-3 py-2 text-sm border border-zinc-900 dark:border-zinc-100 bg-zinc-900 dark:bg-zinc-100 text-white/90 dark:text-black/90 hover:bg-zinc-800 dark:hover:bg-zinc-200 rounded-lg cursor-pointer"
 			>Yes</button
 		>

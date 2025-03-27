@@ -1,15 +1,17 @@
 <script lang="ts">
 	import type { LinkObject } from "$lib";
 	import Delete from "./delete.svelte";
+	import Edit from "./edit.svelte";
 
 	interface Props {
+		id: number;
 		url: string;
 		name: string;
 		links: LinkObject[];
 		load: any;
 	}
 
-	let { url, name, links, load }: Props = $props();
+	let { id, url, name, links, load }: Props = $props();
 
 	const icon = name.charAt(0).toLowerCase();
 
@@ -25,5 +27,8 @@
 		>
 		<a href={url}>{name}</a>
 	</div>
-	<Delete {url} {name} {links} {load} />
+	<div class="inline-flex gap-2">
+		<Edit {id} {url} {name} {links} {load} />
+		<Delete {id} {url} {name} {links} {load} />
+	</div>
 </div>
