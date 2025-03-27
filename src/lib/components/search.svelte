@@ -6,7 +6,7 @@
 
 	let engine = $state("GOOGLE");
 
-	function handleSubmit() {
+	function submit() {
 		const key: string = q.value.replaceAll(" ", "+");
 		const egn: string = e.value;
 
@@ -30,7 +30,7 @@
 	}
 </script>
 
-<form method="get" onsubmit={handleSubmit}>
+<form method="get" onsubmit={submit}>
 	<div class="flex">
 		<!-- svelte-ignore a11y_autofocus -->
 		<input
